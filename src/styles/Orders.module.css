@@ -1,0 +1,69 @@
+.orders {
+    padding: 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.orders h1 {
+    color: #1a1a2e;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.table th,
+.table td {
+    padding: 20px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+.table th {
+    background-color: #1a1a2e;
+    color: white;
+}
+
+.table tr:hover {
+    background-color: #f9f9f9;
+}
+
+.status {
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.доставлен {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.вобработке {
+    background-color: #fff3cd;
+    color: #856404;
+}
+
+.собирается {
+    background-color: #cce5ff;
+    color: #004085;
+}
+
+@media (max-width: 768px) {
+    .orders {
+        padding: 20px;
+    }
+
+    .table {
+        display: block;
+        overflow-x: auto;
+    }
+}
