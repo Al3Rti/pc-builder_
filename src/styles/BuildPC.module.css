@@ -1,0 +1,96 @@
+.build {
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.build h1 {
+    color: #1a1a2e;
+    margin-bottom: 10px;
+}
+
+.build > p {
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.componentList {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.component {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s;
+}
+
+.component:hover {
+    transform: scale(1.03);
+}
+
+.component h3 {
+    color: #00adb5;
+    margin-bottom: 10px;
+}
+
+.component p {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.component button {
+    background-color: #1a1a2e;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.component button:hover {
+    background-color: #00adb5;
+}
+
+.total {
+    margin-top: 50px;
+    padding: 30px;
+    background: #1a1a2e;
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.total h2 {
+    margin-bottom: 20px;
+}
+
+.orderBtn {
+    background-color: #00adb5;
+    color: white;
+    border: none;
+    padding: 15px 40px;
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.orderBtn:hover {
+    background-color: #00959c;
+}
+
+@media (max-width: 768px) {
+    .build {
+        padding: 20px;
+    }
+
+    .componentList {
+        grid-template-columns: 1fr;
+    }
+}
